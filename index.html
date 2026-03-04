@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">LITC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#temas">Temas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Formulario</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section text-center py-5 bg-light">
+    <div class="container">
+        <h1 class="display-4">Sitio Web Informativo</h1>
+        <p class="lead">Desarrollo Web - Unidad I y II</p>
+    </div>
+</header>
+
+<section class="container my-5" id="temas">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="019be20e00 (1).jpg" class="card-img-top" alt="APIs">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Tecnologías de Web APIs</h5>
+                    <p>Reglas que permiten la comunicación entre aplicaciones actuando como capa intermedia para transferencias de datos.</p>
+                    <h7 class="card-title fw-bold">¿Qué es un URI?</h7>
+                    <p>Identificador uniforme de recursos que sirve para acceder a un recurso físico o abstracto por Internet. Existen dos tipos de clase URI:</p>
+                <ul>
+                    <li>URL: Forma de identificar una dirección en la red.</li>
+                    <li>URN: Identifica un recurso por su nombre único y persistente.</li>
+                </ul> 
+                    <h7 class="card-title fw-bold">Sintaxis genérica de una URI</h7>
+                <ul>
+                    <li>scheme: https</li>
+                    <li>authority: example.org</li>
+                    <li>path: test/test1 </li>
+                    <li>query: search=test-question</li>
+                    <li>fragment: part2</li>
+                </ul> 
+                    <h7 class="card-title fw-bold">¿Cuándo se utiliza el "?" dentro de una URI?</h7>
+                    <p>Separa la ruta del recurso path de la cadena de consulta (query string), indicando el inicio de parámetros variables. </p>
+                    <h7 class="card-title fw-bold">¿Para qué sirve una cookie?</h7>
+                    <p>Para que los navegadores web rastreen, personalicen y guarden información acerca de la sesión de cada usuario y agilizar la experiencia en internet, tambien permite  que un servidor pueda utilizar las cookies de otro</p>
+                    <h7 class="card-title fw-bold">¿Cuáles son los dos métodos principales del http request?</h7>
+                    <p>GET Y POST</p>
+                <ul>
+                    <li>GET: Recupera datos sin alterar el estado del servidor ejemplo: cargar una página, buscar algo </li>
+                    <li>POST: Envía información para crear/modificar recursos ejemplo: rellenar un formulario, iniciar sesión</li>
+                </ul> 
+                    <h7 class="card-title fw-bold">¿Qué significa que tengas un código 404 y un 503?</h7>
+                <ul>
+                    <li>404: El servidor no pudo encontrar la página o el recurso que fue solicitado.</li>
+                    <li>503: El servidor está funcionando temporalmente pero no puede procesar la solicitud.</li>
+                </ul>  
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAPI">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <img src="MicroSrvSeg.jpg" class="card-img-top" alt="Microservicios">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Microservicios y Nube</h5>
+                    <p>Enfoque nativo de la nube donde una aplicación se conforma de servicios pequeños poco acoplados y desplegables de forma independiente.</p>
+                    <h7 class="card-title fw-bold">¿Quiénes son los propietarios de los servicios?</h7>
+                    <p>Equipos pequeños, autónomos y multidisciplinario.</p>
+                    <h7 class="card-title fw-bold">¿Qué hace la arquitectura de microservicios?</h7>
+                    <p>Una aplicación se crea con componentes independientes que ejecutan cada proceso de la aplicación como un servicio y a su vez estos se comunican a través de una interfaz bien definida mediante API ligeras</p>
+                    <h7 class="card-title fw-bold">¿Qué es una arquitectura monolítica?</h7>
+                    <p>Es un modelo de desarrollo de software tradicional que utiliza un código base para realizar varias funciones empresariales</p>
+                    <h7 class="card-title fw-bold">¿Cómo funciona la arquitectura de microservicios?</h7>
+                    <p>Dividiendo una aplicación grande en servicios pequeños, independientes y autónomos, cada uno enfocado en una capacidad empresarial específica</p>
+                    <h7 class="card-title fw-bold">¿Cómo funciona la arquitectura de microservicios y como se organizan?</h7>
+                    <p>Protocolos de mensajería para la comunicación asincrónica. Se dividiendo una aplicación grande en componentes pequeños, autónomos y modulares </p>
+                    <h7 class="card-title fw-bold">¿Diferencia con SOA?</h7>
+                    <p>Los microservicios son un estilo arquitectónico para construir aplicaciones como conjuntos de servicios pequeños e independientes, mientras que SOAP es un protocolo estricto para intercambiar información estructurada</p>
+                    <h7 class="card-title fw-bold">¿Qué es DevOps?</h7>
+                    <p>Es una metodología de desarrollo de software que acelera la entrega de aplicaciones y servicios de alto rendimiento mediante la combinación y automatización del trabajo de los equipos de desarrollo de software (Dev) y operaciones de TI (Ops).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="logo-docker.jpg" class="card-img-top" alt="Contenedores">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Contenedores</h5>
+                    <p>Paquetes de software que incluyen todo lo necesario para ejecutarse en cualquier entorno al virtualizar el sistema operativo.</p>
+                    <h7 class="card-title fw-bold">¿Cual es su uso?</h7>
+                    <p>Es un mecanismo de empaquetado lógico en el que las aplicaciones 
+                    pueden extraerse del entorno en que realmente se ejecutan. 
+                    Facilita el despliegue uniforme de las aplicaciones basadas en ellos.</p>
+                    <h7 class="card-title fw-bold">¿Dónde se pueden ejecutar y que permiten?</h7>
+                    <p>Sobre un sistema operativo como Linux o Windows utilizando un motor de contenedores como Docker. Asi mismo permitiendo que los desarrolladores avancen con mucha más rapidez.</p>
+                    <h7 class="card-title fw-bold">¿Qué es Kubernetes, Qué es Docker?</h7>
+                <ul>
+                    <li>Kubernetes: Herramienta de orquestación de contenedores.</li>
+                    <li>Contenedores: Pila de tecnologías de contenedores para crear y ejecutar contenedores. </li>
+                </ul>
+                <h7 class="card-title fw-bold">Usos</h7>
+                <ul>
+                    <li>Kubernetes: Coordinar varios contenedores en varios servidores. </li>
+                    <li>Contenedores: Empaquetar aplicaciones con bibliotecas y tiempos de ejecución en imágenes de contenedor.</li>
+                </ul>
+                <h7 class="card-title fw-bold">Ventaja principal</h7>
+                <ul>
+                    <li>Kubernetes: Definir y ejecutar aplicaciones complejas en contenedores a escala. </li>
+                    <li>Contenedores: Estandarizar las operaciones de las aplicaciones y enviar el código más rápidamente.</li>
+                </ul>
+                <h7 class="card-title fw-bold">¿En dónde son utilizados Kubernetes y Docker?</h7>
+                <p>En la creación y administración de contenedores proporciona la herramienta de software para empaquetar microservicios como programas que se pueden implementar en diferentes plataformas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <img src="download (1).png" class="card-img-top" alt="Aplicaciones en la Nube">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Desarrollo de aplicaciones para la Nube</h5>
+                    <p>Modelo para crear aplicaciones altamente escalables y resistentes que satisfacen las demandas modernas del mercado.</p>
+                    <h7 class="card-title fw-bold">¿Qué son las aplicaciones nativas en la nube?</h7>
+                    <p>Son programas de software que constan de varios servicios pequeños e interdependientes llamados microservicios.</p>
+                    <h7 class="card-title fw-bold">¿Qué es la arquitectura de aplicaciones nativa en la nube?</h7>
+                    <p>La arquitectura nativa en la nube combina componentes de software que los equipos de desarrollo utilizan para crear y ejecutar aplicaciones escalables nativas en la nube. La CNCF enumera la infraestructura inmutable, los microservicios, las API declarativas, los contenedores y las mallas de servicios.</p>
+                    <h7 class="card-title fw-bold">¿Qué es la CNCF?</h7>
+                    <p>Fundación de Computación Nativa de la Nube (CNCF) es una organización de código abierto que apoya a las empresas en su transformación hacia arquitecturas nativas en la nube</p>
+                    <h7 class="card-title fw-bold">¿Qué es la computación en la nube?</h7>
+                    <p>Es la infraestructura de software alojada en un centro de datos externo y puesta a disposición de los usuarios mediante pago por uso</p>
+                    <h7 class="card-title fw-bold">¿Qué significa habilitado para la nube?</h7>
+                    <p>Implica cambiar parte del módulo de software para migrar la aplicación a los servidores en la nube, de esa forma se puede utilizar la aplicación desde un navegador mientras conserva sus características originales.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNUBE">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="modalAPI" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ejemplos de APIs</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>APIs de Google (Gmail, Maps)</li>
+                    <li>PayPal</li>
+                    <li>Videos embebidos de YouTube</li>
+                    <li>Instagram y Facebook</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalNUBE" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Beneficios en la Nube</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Mayor nivel de eficiencia</li>
+                    <li>Reducción de costos operativos</li>
+                    <li>Garantía de alta disponibilidad</li>
+                </ol>
+                <a href="https://aws.amazon.com/es/what-is/cloud-native/">AWS</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="bg-light py-5" id="multimedia">
+    <div class="container text-center">
+        <h3 class="mb-4">Material de Apoyo</h3>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/2sFczigWppk" title="Web API" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/gjRoNFopFig" title="Microservicios" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/u2Ms34GE14U" title="Docker" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/x3Q5ivJbmuQ" title="Nube" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 text-center" id="ubicacion">
+    <h3 class="mb-4">Mapa de Ubicacion</h3>
+    <div class="ratio ratio-21x9 shadow-sm rounded overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.63707776956!2d-102.31798452494253!3d21.910046879969066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef1da1ab338d%3A0x89a0246637c42ddb!2sUniversidad%20Aut%C3%B3noma%20de%20Aguascalientes!5e0!3m2!1ses-419!2smx!4v1772630431126!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<section class="container my-5" id="contacto">
+    <div class="row">
+        <div class="col-md-6 mx-auto bg-white p-4 shadow-lg rounded">
+            <h3 class="text-center mb-4">Permítenos Conocerte</h3>
+            <form id="registroForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Teléfono (10 dígitos)</label>
+                    <input type="tel" class="form-control" pattern="[0-9]{10}" placeholder="4491234567" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" placeholder="Ej. Aguascalientes" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Sugerencias</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 py-2">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="validacion.js"></script>
+</body>
+</html>
+

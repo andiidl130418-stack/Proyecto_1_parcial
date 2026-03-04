@@ -1,0 +1,61 @@
+/* 1. Estilos Generales */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Tarjetas de Temas  */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto de levitación */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+}
+
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover; /* Recortar la imagen sin deformarla */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Formulario*/
+#contacto {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.form-control:focus {
+    border-color: #6610f2;
+    box-shadow: 0 0 0 0.25rem rgba(102, 16, 242, 0.25);
+}
+
+/* Secciones y Mapa */
+.ratio {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+img {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 450px; 
+    height: auto;
+}
