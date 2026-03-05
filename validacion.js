@@ -12,10 +12,10 @@
       
       //Verifica si el formulario NO cumple con las reglas de validación de HTML5
       if (!form.checkValidity()) {
-        event.preventDefault()    // Detiene el envío real del formulario
-        event.stopPropagation()   // Evita que el evento se propague a otros elementos
+        event.preventDefault()    //Detiene el envío real del formulario
+        event.stopPropagation()   //Evita que el evento se propague a otros elementos
       } else {
-        //Si todo es válido, detenemos el envío solo para mostrar el mensaje de éxito
+        //Si todo es válido se detiene el envio solo para mostrar el mensaje de éxito
         event.preventDefault()
         alert('Se a validado!')
       }
